@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
+        body {
+        font-family: 'Poppins', sans-serif;
+        }
+        summary {
+            list-style: none;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
    </style>
     <title>View Notes - Quick Cards</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F2E0DF]">
     <div class="w-[500px] h-[700px] mx-auto flex flex-col">
-        <nav class="bg-white p-5 px-10 flex justify-between items-center mb-4 rounded-bl-[100px] rounded-br-[100px] shadow-md">
-            <a href="index.html">
-                <h1 class="text-xl font-bold text-[#145844]">Quick Cards</h1>
-            </a>
-            <button class="text-emerald-800">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <header class="bg-white p-5 px-10 flex justify-between items-center mb-4 rounded-bl-[100px] rounded-br-[100px] shadow-md relative">
+            <a href="index.html"><h1 class="text-xl font-bold text-[#145844]">Quick Cards</h1></a>
+            <details class="relative">
+            <summary class="cursor-pointer">
+                <svg class="w-6 h-6 text-[#145844]" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-            </button>
-        </nav>
+            </summary>
+            <nav class="absolute right-0 mt-1 w-48 bg-white rounded-lg shadow-lg text-[#145844] z-10">
+                <a href="viewnotes.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">View Notes</a>
+                <a href="import.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">Import Questions</a>
+                <a href="play.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">Play Flashcards</a>
+            </nav>
+            </details>
+        </header>
 
         <div class="w-full max-w-md mt-10 px-10 flex flex-col gap-4">
             <a href="index.html" class="flex items-center gap-2 text-[#145844] hover:font-black text-sm font-semibold">
@@ -34,23 +46,23 @@
             </a>
 
             <a href="notes1.html">
-                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium">Topic 1</div>
+                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300">Topic 1</div>
             </a>
 
             <a href="notes2.html">
-                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium">Topic 2</div>
+                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300">Topic 2</div>
             </a>
 
             <a href="notes3.html">
-                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium">Topic 3</div>
+                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300">Topic 3</div>
             </a>
 
             <a href="notes4.html">
-                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium">Topic 4</div>
+                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300">Topic 4</div>
             </a>
 
             <a href="notes5.html">
-                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium">Topic 5</div>
+                <div class="bg-white rounded-full shadow-md px-6 py-3 text-[#145844] font-medium hover:shadow-lg hover:scale-105 transition-transform duration-300">Topic 5</div>
             </a>
         </div>
 

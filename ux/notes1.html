@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+        font-family: 'Poppins', sans-serif;
+        }
+        summary {
+            list-style: none;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+   </style>
+    <title>Notes - Quick Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F2E0DF]">
+    <div class="w-[500px] h-[700px] mx-auto flex flex-col">
+        <header class="bg-white p-5 px-10 flex justify-between items-center mb-4 rounded-bl-[100px] rounded-br-[100px] shadow-md relative">
+            <a href="index.html"><h1 class="text-xl font-bold text-[#145844]">Quick Cards</h1></a>
+            <details class="relative">
+            <summary class="cursor-pointer">
+                <svg class="w-6 h-6 text-[#145844]" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </summary>
+            <nav class="absolute right-0 mt-1 w-48 bg-white rounded-lg shadow-lg text-[#145844] z-10">
+                <a href="viewnotes.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">View Notes</a>
+                <a href="import.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">Import Questions</a>
+                <a href="play.html" class="block px-4 py-2 hover:bg-[#F2E0DF]">Play Flashcards</a>
+            </nav>
+            </details>
+        </header>
+
+        <div class="flex-grow flex flex-col p-6">
+            <div class="shadow-2xl shadow-[#000000]/30 bg-white rounded-3xl flex flex-col gap-4 flex-grow">
+                <div class="font-poppins font-medium text-xl text-[#145844] placeholder-[#145844]/50 rounded-tl-[100px] rounded-tr-[100px] focus:outline-none p-5 shadow-md">
+
+                </div>
+                <div class="flex-grow font-poppins text-[#145844] placeholder-[#145844]/50 focus:outline-none resize-none px-5 rounded-3xl">
+
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-6">
+                <a href="play.html">
+                    <button
+                    type="button"
+                    class="font-poppins bg-white px-6 py-2 rounded-xl border-2 border-[#145844] text-[#145844] font-medium hover:font-bold hover:bg-[#145844] hover:text-white hover:shadow-lg hover:shadow-[#145844]/50 hover:scale-110 transition-all duration-300"
+                    >Play</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
